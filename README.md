@@ -18,43 +18,32 @@ Illustration:
 Let us understand the working of the algorithm with the help of the following example.
 Step1: Initially queue and visited arrays are empty.
 </p>
-
 ![image](https://github.com/natsaravanan/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/87870499/8acdebf8-ecc2-4d10-a208-45cce441f059)
-
 
 Queue and visited arrays are empty initially.
 Step2: Push node 0 into queue and mark it visited.
-
 ![image](https://github.com/natsaravanan/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/87870499/0e9ce012-8e1f-43d7-b7b9-c0fb19fe0c3f)
-
 
 Push node 0 into queue and mark it visited.
 Step 3: Remove node 0 from the front of queue and visit the unvisited neighbours and push them into queue.
-
 ![image](https://github.com/natsaravanan/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/87870499/67d8fa3b-ce9e-46c2-9dd7-089e204e667a)
 
 Step 4: Remove node 1 from the front of queue and visit the unvisited neighbours and push them into queue.
-
 ![image](https://github.com/natsaravanan/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/87870499/b0cf0fde-8a86-41cb-a054-36875ac24ab0)
 
 Step 5: Remove node 2 from the front of queue and visit the unvisited neighbours and push them into queue.
-
 ![image](https://github.com/natsaravanan/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/87870499/8968a163-6b3a-4f7e-8ad4-bbf24f326b9b)
 
 Step 6: Remove node 3 from the front of queue and visit the unvisited neighbours and push them into queue. 
 As we can see that every neighbours of node 3 is visited, so move to the next node that are in the front of the queue.
-
 ![image](https://github.com/natsaravanan/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/87870499/7a1c1b16-ea69-497f-a099-8440200f6dc0)
 
 Steps 7: Remove node 4 from the front of queue and visit the unvisited neighbours and push them into queue. 
 As we can see that every neighbours of node 4 are visited, so move to the next node that is in the front of the queue.
-
 ![image](https://github.com/natsaravanan/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/87870499/8e16ffa3-c3d6-4774-822b-6eb84adedad9)
 
 Remove node 4 from the front of queue and visit the unvisited neighbours and push them into queue.
 Now, Queue becomes empty, So, terminate these process of iteration.
-
-
 <hr>
 <h2>Algorithm:</h2>
 <hr>
@@ -65,9 +54,7 @@ Now, Queue becomes empty, So, terminate these process of iteration.
 <li>Find its Successors Or neighbors and Check whether the node is visited or not.</li>
 <li>If Not Visited, add it to the Queue. Else Continue.</li>
 <li>Iterate steps 4 and 5 until all nodes get visited, and there are no more unvisited nodes.</li>
-
 </ol>
-
 <hr>
 <h3>Sample Input</h3>
 <hr>
@@ -85,9 +72,7 @@ G F <BR>
 <h3>Sample Output</h3>
 <hr>
 ['A', 'B', 'C', 'F', 'E', 'D', 'G']
-
 <hr>
-
 <hr>
 <h3>Sample Input</h3>
 <hr>
@@ -152,6 +137,7 @@ visited = defaultdict(bool)
 traversedpath = bfs(graph, start, visited, path)
 print("BFS Traversal Path:", traversedpath)
 ```
+
 ### OUTPUT
 <img width="416" height="181" alt="image" src="https://github.com/user-attachments/assets/ef10c14a-25fa-4db9-b417-6974aaa24f60" />
 
